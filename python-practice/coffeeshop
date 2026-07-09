@@ -1,0 +1,91 @@
+# Let's start a coffee shop together!! We're going to build a coffee shop using some new Python programming concepts!!
+
+#Let's build robot Barista!!
+
+#print("Hello, Welcome to WhiteShadow coffee!!!!!!!!!")
+
+#print("What is your name")
+
+#name = input("What is your name?\n")
+
+#print(name)
+
+#print("Hello " + name + ", thank you so much for coming in today!!")
+
+#print(f"Welcome {name} thank you so much for coming in today!!")
+
+#name = "WhiteShadow\n"
+
+#print(name)
+
+#name = "Iron Man"
+
+#print(name * 100)
+
+print("Hello, Welcome to WhiteShadow Coffee shop!!!!!")
+name = input("What is your name?\n")
+if name == "ben" or "patricia" or "loki":
+    evil_status = input("Are you evil?\n")
+    good_deeds = int(input("How many good deeds have you done today?\n"))
+    if evil_status == "yes" and good_deeds < 4:
+
+        print("Your are not welcome here evil " + name + ". Get out!!!")
+        exit()
+    else:
+        print("Oh, you're one of those good " + name + "s!! Come on in!!!")
+else:
+    print("Hello " + name + ", thank you so much for coming in today.")
+
+print(name + ", what would you like from our menu today.")
+
+menu = input("Black coffee, latte, cappucino, tea, frappucino\n")
+
+if menu == "frappucino":
+    price = 13
+elif menu == "black coffee":
+    price = 3
+elif menu == "latte":
+    choice = input("Do you want whipped cream?\n")
+    if choice == "yes":
+        price = 11
+    elif choice == "no":
+        price = 8
+    else:
+        print("Make a valid choice.\n")
+        rechoose = input("Do you want whipped cream?\n")
+        if rechoose == "yes":
+            price = 11
+        if rechoose == "no":
+            price = 8 
+elif menu == "tea":
+    price = 9
+elif menu == "cappucino":
+    price = 10
+else:
+    print("Sorry, we don't have that on the menu. Kindly select an item on the menu")
+    quit()
+order = input("How many " + menu + " would you like\n")
+total = int(order) * price
+print("Thank you so much. Your total is $" + str(total))
+print("Sounds good " + name + ", we'll have your " + order + " " + menu + " ready for you in a moment.")
+
+def palindromeFunc(string):
+    value = string
+    invert = value[::-1]
+    if value == invert:
+        print("It's a palindrome")
+    else:
+        print("Not a palindrome")
+
+example_1 = "racecar"
+
+print(palindromeFunc(example_1))
+
+example_2 = "hello"
+
+print(palindromeFunc(example_2))
+
+example_3 = "A man a plan a canal panama"
+
+print(palindromeFunc(example_3))
+

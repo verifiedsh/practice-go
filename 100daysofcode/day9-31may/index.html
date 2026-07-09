@@ -1,0 +1,27 @@
+<!--web forms-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="my viewport" content="width=device-width" />
+    <title>Ascii-art web test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+    <form action="/my-handling-form-page" method="post">
+      <!--<form action="/my-handling-form-page" method="post">…</form>-->
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" value="input style" />
+      </p>
+      <p>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email" />
+      </p>
+      <p>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </p>
+    </form>
+  </body>
+</html>

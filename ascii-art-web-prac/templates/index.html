@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-art-web</title>
+</head>
+<body>
+    <form action="/output" method="POST">
+        <div>
+            <textarea name="text" type="text" required placeholder="Enter text"></textarea>
+        </div>
+        <fieldset>
+            <legend>Allowed banners:</legend>
+                <label for="shadow">Shadow</label>
+                <input type="radio" name="banner" required id="shadow" value="shadow.txt">
+                <br>
+                <label for="standard">Standard</label>
+                <input type="radio" name="banner" required id="standard" value="standard.txt">
+                <br>
+                <label for="thinkertoy">Thinkertoy</label>
+                <input type="radio" name="banner" required id="thinkertoy" value="thinkertoy.txt">
+                <div>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Generate</button>
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>

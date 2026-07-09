@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	s := "helloo"
+	fmt.Println(string(s[len(s)/2]))
+
+	if len(s)%2 == 0 {
+		fmt.Println(s[len(s)/2-1 : len(s)/2+1])
+	} else {
+		fmt.Println(s)
+	}
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCII-Art-web</title>
+</head>
+<body>
+    <form action="/ascii-art" method="POST">
+      <input type="text" name="text" required placeholder="Enter text"/>
+      <button type="submit">Generate</button>
+    <fieldset>
+        <legend>Allowed Banners:</legend>
+        <ul>
+            <li>
+            <label for="standard">Standard</label>
+                <input type="radio" name="banner" value="standard" /> 
+            </li>
+            <li>
+             <label for="Shadow">Shadow</label>
+             <input type="radio" name="banner" value="shadow" /> 
+            </li>
+            <li>
+            <label for="Thinkertoy">Thinkertoy</label>
+            <input type="radio" name="banner" value="thinkertoy" />     
+            </li>
+        </ul>
+    </fieldset>
+    </form>
+</body>
+</html>

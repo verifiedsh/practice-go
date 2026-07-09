@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👨🏽‍💻Ascii-Art-Web-Switcher</title>
+</head>
+<style>
+    .active{
+    background: red;
+}
+</style>
+<body>
+    <form action="/ascii-art" method="POST">
+        <textarea name="text" id="text">{{.Text}}</textarea>
+        <br>
+        <select name="banner" id="">
+        <option value="shadow">Shadow</option>
+        <option value="standard">Standard</option>
+        <option value="thinkertoy">Thinkertoy</option>
+        </select>
+        <br>
+        <button type="submit">Generate</button>
+    </form>
+    
+    {{if .Result}}
+    <pre>{{.Result}}</pre>
+    <a href="/ascii-art-switch?text={{.Text}}&banner=shadow" class="{{if eq .Banner `shadow`}}active{{end}}">Shadow</a>
+    <a href="/ascii-art-switch?text={{.Text}}&banner=standard" class="{{if eq .Banner `standard`}}active{{end}}">Standard</a>
+    <a href="/ascii-art-switch?text={{.Text}}&banner=thinkertoy" class="{{if eq .Banner `thinkertoy`}}active{{end}}">Thinkertoy</a>
+    {{end}}
+</body>
+</html>
+

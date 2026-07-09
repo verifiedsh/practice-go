@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Error Pages</title>
+</head>
+<body>
+    <form action="/echo" method="POST">
+        <textarea type="text" id="text" placeholder="Enter text..." name="text">{{.Text}}</textarea>
+        <button type="submit">Echo</button>
+    </form>
+    <p>{{.Result}}</p>
+</body>
+</html>
